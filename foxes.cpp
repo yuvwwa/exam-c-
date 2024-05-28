@@ -6,7 +6,7 @@ using namespace std;
 
 //конструктор, в котором полю рандомно присваиваются лисы со значением -1 и пустые ячейки со значением 0.
 
-Game::Game() : foxesFound(0) {
+Hunter_foxes::Hunter_foxes() : foxesFound(0) {
         srand(time(nullptr));
         for (int i = 0; i < field_size; ++i) {
             for (int j = 0; j < field_size; ++j) {
@@ -24,7 +24,7 @@ Game::Game() : foxesFound(0) {
 
 //далее вводится функция, в котором мы создаем цикл.
 
-void Game::play() {
+void Hunter_foxes::play() {
     while (foxesFound < count_fox) {
         int x, y;
         cout << "Введите координаты (x, y): ";
