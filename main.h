@@ -5,11 +5,11 @@ using namespace std;
 const int field_size = 10;
 const int count_fox = 8;
 
-class Game {
+class Hunter_foxes {
 private:
     int field[field_size][field_size];
     int foxesFound;
 public:
-    Game();
+    Hunter_foxes();
     void play();
 };
