@@ -1,13 +1,13 @@
 #include <iostream>
-#include "game.cpp"
+#include "foxes.cpp"
 using namespace std;
 
 int main() {
 
     setlocale(LC_ALL, "RU");
 
-    Game game;
-    game.play();
+    Hunter_foxes fox;
+    fox.play();
 
     return 0;
 }
